@@ -10,3 +10,7 @@
 2. install dependecies: npm i --save-dev prisma typescript ts-node @types/node nodemon
 
 3)Create a TS config file: tsconfig.json
+
+4. Initialize Prisma: npx prisma init --datasource-provider postgresql
+
+5. In VS Code, install Prisma extension
