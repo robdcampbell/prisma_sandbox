@@ -16,6 +16,12 @@
 5. In VS Code, install Prisma extension
 
 6. Migrate schema information:
+
    - npx prisma migrate dev --name init (when working in a dev env)
 
-\*\*\* npm install -g npm@9.2.0
+7. Install Prisma CLient:
+
+   - npm i @prisma/client
+
+8. Manually re-generate the client: (will generate based on provide in schema.prisma)
+   - npx prisma generate
