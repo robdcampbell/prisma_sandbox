@@ -1,14 +1,18 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// GENERATOR - can have multiple generators 
 generator client {
   provider = "prisma-client-js"
 }
 
+// DATASOURCE - can only have 1! Prisma directly connecting to DB.
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+// MODELS
 
 model User {
   // correct to UUID
